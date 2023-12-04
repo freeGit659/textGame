@@ -1,0 +1,112 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "GameMain",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.3333333333333333,
+  "sample": 60,
+  "speed": 0.3,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": []
+    },
+    "paths": {
+      "User Infomation": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -280,
+                423.755,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                -280,
+                250,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Text Layout": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                -464.702,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                0,
+                100,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Typing Box": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -1026.244,
+                -98.772,
+                0
+              ]
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                0,
+                -98.772,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Clock/Cover": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -0.314,
+                -2.831,
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "Clock": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                400,
+                250,
+                0
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

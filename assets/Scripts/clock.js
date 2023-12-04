@@ -43,6 +43,12 @@ cc.Class({
 
     gameOver(){
         this.gameOverPanel.active = true;
+        this.gameOverPanel.getComponent(cc.Animation).play('GameOver');
         this.node.parent.active = false;
+    },
+
+    restartGame(){
+        this.currentTime = this.time;
+        this.isTyping = false;
     }
 });

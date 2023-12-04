@@ -1,0 +1,67 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "WordWare",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.8333333333333333,
+  "sample": 60,
+  "speed": 0.7,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Label": {
+        "string": [
+          {
+            "frame": 0,
+            "value": "_yping Game"
+          },
+          {
+            "frame": 0.16666666666666666,
+            "value": "T_ping Game"
+          },
+          {
+            "frame": 0.3333333333333333,
+            "value": "Ty_ing Game"
+          },
+          {
+            "frame": 0.5,
+            "value": "Typ_ng Game"
+          },
+          {
+            "frame": 0.6666666666666666,
+            "value": "Typi_g Game"
+          },
+          {
+            "frame": 0.8333333333333334,
+            "value": "Typin_ Game"
+          },
+          {
+            "frame": 1,
+            "value": "Typing_Game"
+          },
+          {
+            "frame": 1.1666666666666667,
+            "value": "Typing _ame"
+          },
+          {
+            "frame": 1.3333333333333333,
+            "value": "Typing G_me"
+          },
+          {
+            "frame": 1.5,
+            "value": "Typing Ga_e"
+          },
+          {
+            "frame": 1.6666666666666667,
+            "value": "Typing Gam_"
+          },
+          {
+            "frame": 1.8333333333333333,
+            "value": "Typing Game"
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

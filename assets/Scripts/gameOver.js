@@ -8,6 +8,7 @@ cc.Class({
 
         accountManager: cc.Node,
         text:cc.Node,
+        gameMain: cc.Node,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -21,4 +22,11 @@ cc.Class({
     },
 
     // update (dt) {},
+
+    restartGame(){
+        this.text.getComponent('text').restartGame();
+        this.gameMain.getComponent(cc.Animation).play('GameMain');
+        this.gameMain.active = true;
+        this.node.active = false;
+    }
 });

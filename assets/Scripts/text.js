@@ -1,4 +1,5 @@
 var randomParagraph = require('random-paragraph');
+
 cc.Class({
     extends: cc.Component,
 
@@ -18,6 +19,8 @@ cc.Class({
         wordsLayout: [cc.Label],
         wordsLayout2: [cc.Label],
 
+        texLabel: cc.Label,
+
         wordsArray: [String],
 
         typingInput: cc.EditBox,
@@ -30,27 +33,29 @@ cc.Class({
 
     start () {
         this.caseTest = randomParagraph();
-        this.wordsArray = this.caseTest.split(' ');
+        this._wordsArray = this.caseTest.split(' ');
+        if(this._wordsArray.length < 100) {
+            this.caseTest += randomParagraph();
+            this._wordsArray = this.caseTest.split(' ');
+        }
+        this.wordsArray = this._wordsArray.filter(function(element){
+            return element.length <= 6;
+          });
         this.setWords();
     },
 
     update (dt) {
         if(this.indexTyping >=5){
             this.wordsArray.splice(0, this.wordsLayout.length);
-            cc.log(this.wordsLayout.length);
-            cc.log(this.wordsArray);
             this.indexTyping = 0;
             this.setWords();
             this.numSpace += 5;
-            cc.log(this.indexTyping);
         }
     },
 
     onTextChanged() {
         this.clock.getComponent('clock').isTyping = true;
-        cc.log(this.typingInput.string.split(" ").length - 1 - this.numSpace, this.indexTyping);
         if(((this.typingInput.string.split(" ").length - 1) - this.numSpace) === this.indexTyping + 1) {
-            cc.log('num', this.numSpace);
             this.checkMatch(this.typingInput.string.slice(this._textTemp.length).trimEnd());
             this._textTemp =  this.typingInput.string;
         }
@@ -83,5 +88,18 @@ cc.Class({
         if(this.indexTyping < 5) {
             this.wordsLayout[this.indexTyping].node.color = new cc.Color(0,0,255);
         }
+    },
+
+    restartGame(){
+        this.texLabel.string = '';
+        this.typingInput.string= '';
+        this.wpm = 0;
+        this.indexTyping = 0;
+        this.numSpace = 0;
+        this._textTemp = '';
+        this.caseTest = randomParagraph();
+        this.wordsArray = this.caseTest.split(' ');
+        this.setWords();
+        this.clock.getComponent('clock').restartGame();
     }
 });
