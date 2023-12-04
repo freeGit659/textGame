@@ -334,7 +334,7 @@
         "__id__": 56
       }
     ],
-    "_active": false,
+    "_active": true,
     "_level": 2,
     "_components": [],
     "_prefab": null,
@@ -2897,7 +2897,7 @@
         "__id__": 133
       }
     ],
-    "_active": true,
+    "_active": false,
     "_level": 2,
     "_components": [],
     "_prefab": null,
@@ -2906,7 +2906,7 @@
       "__type__": "cc.Color",
       "r": 255,
       "g": 255,
-      "b": 255,
+      "b": 248,
       "a": 255
     },
     "_contentSize": {

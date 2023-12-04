@@ -1,8 +1,9 @@
+var randomParagraph = require('random-paragraph');
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        caseTest: `Test your speed by typing the 500 most popular English words! There is no time-limit, practice to type as long as you like. Press Enter to select the word list to type and choose both the theme and audio settings.`,
+        caseTest: String,
         
         
         wpm: 0,
@@ -28,6 +29,7 @@ cc.Class({
     // onLoad () {},
 
     start () {
+        this.caseTest = randomParagraph();
         this.wordsArray = this.caseTest.split(' ');
         this.setWords();
     },
@@ -60,27 +62,26 @@ cc.Class({
         for(let i = 0; i < this.row1.childrenCount; i++){
             this.wordsLayout.push(this.row1.getChildByName(`Word `+i).getComponent(cc.Label));
             this.wordsLayout[i].string = this.wordsArray[i];
+            this.wordsLayout[i].node.color = new cc.Color(0,0,0);
         }
-        cc.log('done row 1');
         for(let j = 0; j < this.row2.childrenCount; j++){
             this.wordsLayout2.push(this.row2.getChildByName(`Word `+j).getComponent(cc.Label));
             this.wordsLayout2[j].string = this.wordsArray[j+this.row1.childrenCount];
+            this.wordsLayout[j].node.color = new cc.Color(0,0,0);
         }
-        cc.log('done row 2');
-        this.wordsLayout[this.indexTyping].node.color = new cc.Color(255,0,0);
+        this.wordsLayout[this.indexTyping].node.color = new cc.Color(0,0,255);
     },
 
     checkMatch(input){
         if(this.wordsLayout[this.indexTyping].string === input) {
             this.wpm++;
-            cc.log('Dung');
+            this.wordsLayout[this.indexTyping].node.color = new cc.Color(0,255,0);
         }
-        else cc.log('Sai');
-        cc.log(`|`+this.wordsLayout[this.indexTyping].string+`|`, `|`+input+`|`);
+        else this.wordsLayout[this.indexTyping].node.color = new cc.Color(255,0,0);
+        // cc.log(`|`+this.wordsLayout[this.indexTyping].string+`|`, `|`+input+`|`);
         this.indexTyping++;
         if(this.indexTyping < 5) {
-            this.wordsLayout[this.indexTyping].node.color = new cc.Color(255,0,0);
+            this.wordsLayout[this.indexTyping].node.color = new cc.Color(0,0,255);
         }
-        this.wordsLayout[this.indexTyping -1].node.color = new cc.Color(0,0,0);
     }
 });
