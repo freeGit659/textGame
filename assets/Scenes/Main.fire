@@ -380,9 +380,9 @@
     },
     "_enabled": true,
     "_clip": {
-      "__uuid__": "c3f08c3a-4c19-43d5-8ede-8e32aaa0a9f2"
+      "__uuid__": "3850e75b-84a1-493b-9060-81825fb95fe5"
     },
-    "_volume": 1,
+    "_volume": 0.5,
     "_mute": false,
     "_loop": true,
     "playOnLoad": true,
@@ -3152,7 +3152,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150,
+      "width": 190,
       "height": 50
     },
     "_anchorPoint": {
@@ -3210,8 +3210,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 126.97,
-      "height": 50.4
+      "width": 95.23,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3220,7 +3220,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -60,
+      "x": -76,
       "y": 0,
       "z": 0
     },
@@ -3258,8 +3258,8 @@
     "_useOriginalSize": false,
     "_string": "Word 0",
     "_N$string": "Word 0",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -3300,8 +3300,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 108.16,
-      "height": 50.4
+      "width": 81.12,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3310,7 +3310,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -30,
+      "x": -38,
       "y": 0,
       "z": 0
     },
@@ -3348,8 +3348,8 @@
     "_useOriginalSize": false,
     "_string": "Word1",
     "_N$string": "Word1",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -3390,8 +3390,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 117.58,
-      "height": 50.4
+      "width": 88.18,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3438,8 +3438,8 @@
     "_useOriginalSize": false,
     "_string": "Word2",
     "_N$string": "Word2",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -3480,8 +3480,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 117.58,
-      "height": 50.4
+      "width": 88.18,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3490,7 +3490,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 30,
+      "x": 38,
       "y": 0,
       "z": 0
     },
@@ -3528,8 +3528,8 @@
     "_useOriginalSize": false,
     "_string": "Word3",
     "_N$string": "Word3",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -3570,8 +3570,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 117.58,
-      "height": 50.4
+      "width": 88.18,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3580,7 +3580,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 60,
+      "x": 76,
       "y": 0,
       "z": 0
     },
@@ -3618,8 +3618,8 @@
     "_useOriginalSize": false,
     "_string": "Word4",
     "_N$string": "Word4",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -3676,7 +3676,7 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 150,
+      "width": 190,
       "height": 50
     },
     "_resize": 2,
@@ -3744,7 +3744,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 150,
+      "width": 190,
       "height": 50
     },
     "_anchorPoint": {
@@ -3760,8 +3760,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
+      "x": 0.8,
+      "y": 0.6,
       "z": 1
     },
     "_eulerAngles": {
@@ -3802,8 +3802,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 126.97,
-      "height": 50.4
+      "width": 95.23,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3812,7 +3812,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -60,
+      "x": -76,
       "y": 0,
       "z": 0
     },
@@ -3850,8 +3850,8 @@
     "_useOriginalSize": false,
     "_string": "Word 0",
     "_N$string": "Word 0",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -3892,8 +3892,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 108.16,
-      "height": 50.4
+      "width": 81.12,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3902,7 +3902,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -30,
+      "x": -38,
       "y": 0,
       "z": 0
     },
@@ -3940,8 +3940,8 @@
     "_useOriginalSize": false,
     "_string": "Word1",
     "_N$string": "Word1",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -3982,8 +3982,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 117.58,
-      "height": 50.4
+      "width": 88.18,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4030,8 +4030,8 @@
     "_useOriginalSize": false,
     "_string": "Word2",
     "_N$string": "Word2",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -4072,8 +4072,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 117.58,
-      "height": 50.4
+      "width": 88.18,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4082,7 +4082,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 30,
+      "x": 38,
       "y": 0,
       "z": 0
     },
@@ -4120,8 +4120,8 @@
     "_useOriginalSize": false,
     "_string": "Word3",
     "_N$string": "Word3",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -4162,8 +4162,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 117.58,
-      "height": 50.4
+      "width": 88.18,
+      "height": 37.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4172,7 +4172,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 60,
+      "x": 76,
       "y": 0,
       "z": 0
     },
@@ -4210,8 +4210,8 @@
     "_useOriginalSize": false,
     "_string": "Word4",
     "_N$string": "Word4",
-    "_fontSize": 40,
-    "_lineHeight": 40,
+    "_fontSize": 30,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "ee2d15e3-e93f-46bf-99b8-0b930d85f388"
@@ -4268,7 +4268,7 @@
     "_enabled": true,
     "_layoutSize": {
       "__type__": "cc.Size",
-      "width": 150,
+      "width": 190,
       "height": 50
     },
     "_resize": 2,
@@ -6415,7 +6415,7 @@
     "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
-    "_N$horizontalAlign": 0,
+    "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,

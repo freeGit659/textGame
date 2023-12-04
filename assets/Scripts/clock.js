@@ -44,11 +44,16 @@ cc.Class({
     gameOver(){
         this.gameOverPanel.active = true;
         this.gameOverPanel.getComponent(cc.Animation).play('GameOver');
+        this.gameOverPanel.getComponent('gameOver').setWPM();
+
         this.node.parent.active = false;
     },
 
     restartGame(){
         this.currentTime = this.time;
+        this.clockTime.string = Math.round(this.currentTime);
+        this.cover.color = new cc.Color(0,255,0);
+        this.coverSprite.fillRange = this.currentTime/60;
         this.isTyping = false;
     }
 });

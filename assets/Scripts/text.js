@@ -39,7 +39,7 @@ cc.Class({
             this._wordsArray = this.caseTest.split(' ');
         }
         this.wordsArray = this._wordsArray.filter(function(element){
-            return element.length <= 6;
+            return element.length <= 8;
           });
         this.setWords();
     },
