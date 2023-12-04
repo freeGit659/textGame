@@ -4,7 +4,13 @@ cc.Class({
     properties: {
         time: 60,
         currentTime: 0,
+
+        isTyping: false,
+
         cover: cc.Node,
+        clockTime: cc.Label,
+
+        gameOverPanel: cc.Node,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -17,16 +23,26 @@ cc.Class({
     },
 
     update (dt) {
-        if(this.currentTime >= (this.time*0.6)){
+        if(!this.isTyping) return;
+        if(this.currentTime >= (this.time*0.4)){
             this.cover.color = new cc.Color(0,255,0);
         }
-        if(this.currentTime <= (this.time*0.6) && this.currentTime >= (this.time*0.3)){
+        if(this.currentTime <= (this.time*0.4) && this.currentTime >= (this.time*0.1)){
             this.cover.color = new cc.Color(255,255,0);
         }
         if(this.currentTime <= (this.time*0.1)){
-            this.cover.color = new cc.Color(255,255,0);
+            this.cover.color = new cc.Color(255,0,0);
         }
+        this.clockTime.string = Math.round(this.currentTime);
         this.coverSprite.fillRange = this.currentTime/60;
+        if(this.currentTime <= 0){
+            this.gameOver();
+        }
         this.currentTime -= dt;
     },
+
+    gameOver(){
+        this.gameOverPanel.active = true;
+        this.node.parent.active = false;
+    }
 });

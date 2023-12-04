@@ -4,6 +4,7 @@ cc.Class({
     properties: {
         caseTest: `Test your speed by typing the 500 most popular English words! There is no time-limit, practice to type as long as you like. Press Enter to select the word list to type and choose both the theme and audio settings.`,
         
+        
         wpm: 0,
         indexTyping: 0,
         numSpace: 0,
@@ -19,6 +20,7 @@ cc.Class({
         wordsArray: [String],
 
         typingInput: cc.EditBox,
+        clock: cc.Node,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -42,7 +44,8 @@ cc.Class({
         }
     },
 
-    onEditingReturn() {
+    onTextChanged() {
+        this.clock.getComponent('clock').isTyping = true;
         cc.log(this.typingInput.string.split(" ").length - 1 - this.numSpace, this.indexTyping);
         if(((this.typingInput.string.split(" ").length - 1) - this.numSpace) === this.indexTyping + 1) {
             cc.log('num', this.numSpace);
